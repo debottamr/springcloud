@@ -1,7 +1,0 @@
-mvn archetype:generate
-    -DgroupId=com.howtodoinjava.core
-    -DartifactId=springCoreTest
-    -DarchetypeArtifactId=maven-archetype-quickstart
-    -DinteractiveMode=false
- 
-mvn eclipse:eclipse
