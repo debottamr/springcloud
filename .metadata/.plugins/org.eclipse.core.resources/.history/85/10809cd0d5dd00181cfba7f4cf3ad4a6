@@ -1,0 +1,13 @@
+package event;
+
+@Controller ("employeeController")
+public class EmployeeController
+{
+    @Autowired
+    EmployeeManager manager;
+      
+    public EmployeeDTO createNewEmployee()
+    {
+        return manager.createNewEmployee();
+    }
+}

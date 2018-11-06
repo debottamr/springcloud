@@ -1,0 +1,5 @@
+package scanconfig;
+
+public class DatabaseConfig {
+
+}

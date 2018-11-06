@@ -1,0 +1,7 @@
+package spring1;
+
+@Service
+@Scope("session")
+public class DemoBean {
+	// Some code
+}

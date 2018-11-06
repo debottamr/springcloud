@@ -1,0 +1,18 @@
+package factory;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main {
+
+	public static void main(String[] args) {
+		 
+		ApplicationContext context = new ClassPathXmlApplicationContext("classpath:/factory/applicationContext.xml");
+		 
+        EmployeeDTO manager = (EmployeeDTO) context.getBean("manager");
+        System.out.println(manager);
+         
+        EmployeeDTO director = (EmployeeDTO) context.getBean("director");
+        System.out.println(director);
+	}
+}

@@ -1,0 +1,14 @@
+package spring1;
+
+public class CustomResourceLoaderMain {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) throws Exception
+	{
+	    ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+	 
+	    CustomResourceLoader customResourceLoader = (CustomResourceLoader) context.getBean("customResourceLoader");
+	 
+	    customResourceLoader.showResourceData();
+	}
+}

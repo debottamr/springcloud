@@ -1,0 +1,17 @@
+package spring1;
+
+import org.springframework.core.io.Resource;
+
+public class CustomResourceLoaderIn {
+		 
+	    private Resource resource;
+	 
+	    public Resource getResource() {
+	        return resource;
+	    }
+	 
+	    public void setResource(Resource resource) {
+	        this.resource = resource;
+	    }
+	
+}
